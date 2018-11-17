@@ -1,0 +1,135 @@
+/*1.-GENERALES
+2.-CABECERA
+3.-CUERPO
+4.-SECCIONES*/
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*1.-GENERALES*/
+
+html{
+
+    height: 100%;
+
+}
+
+body{
+
+    height: 100%;
+    background: #59514D;
+
+}
+
+/*2.-CABECERA*/
+
+header{
+
+    position: fixed;
+    top:0;
+    background: rgba(38, 36, 33,.5);
+    height: 75px;
+    width: 100%;
+    z-index: 999;
+}
+
+header h1{
+
+    font: 2em/1.5 "Helvetica neue";
+    color: #fff;
+    float: left;
+    font-weight: 100;
+    line-height: 75px;
+    margin-left: 10px;
+
+
+}
+
+header ul{
+
+    list-style: none;
+    float: right;
+
+}
+
+header ul li{
+
+    float: left;
+    background: #000;
+    border: 2px solid #BFB6AE;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+header ul li a{
+
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+
+}
+
+/*3.-CUERPO*/
+
+.wrap{
+
+    width: 980px;
+    margin: 0 auto;
+    background: #A69C94;
+    height: 100%;
+    margin-top: 75px;
+    padding: 20px;
+    overflow: auto;
+}
+
+/*4.-SECCIONES*/
+
+.seccion{
+
+    background: #fff;
+    padding: 15px;
+    margin: 15px;
+    position: relative;
+
+}
+
+.seccion p{
+    
+    margin: 15px;
+    
+}
+
+.tira{
+
+    background: #000;
+    color: #fff;
+    position: absolute;
+    padding: 5px 15px 5px 35px;
+    margin: 0;
+    top: -7px;
+    left: -21px;
+
+}
+
+.tira:after{
+
+    content: ' ';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-right: 21px solid #FA4B2A;
+    border-bottom: 21px solid transparent;
+    position: absolute;
+    left: 0px;
+    top: 38px;
+
+
+}
